@@ -1,33 +1,43 @@
-# Convert Claude JSON to Markdown
+# Claude JSON to Markdown Converter
 
-https://observablehq.com/@simonw/convert-claude-json-to-markdown@125
+A web application that converts Claude AI chat JSON responses into readable Markdown format.
 
-View this notebook in your browser by running a web server in this folder. For
-example:
+## Features
 
-~~~sh
-npx http-server
-~~~
+- Convert Claude JSON chat history to Markdown
+- Syntax highlighting for code blocks
+- Copy code functionality
+- Responsive design
+- Real-time preview
+- Timestamps for messages
 
-Or, use the [Observable Runtime](https://github.com/observablehq/runtime) to
-import this module directly into your application. To npm install:
+## Tech Stack
 
-~~~sh
-npm install @observablehq/runtime@5
-npm install https://api.observablehq.com/d/1869620979c780ec@125.tgz?v=3
-~~~
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- React Markdown
+- Syntax Highlighter
 
-Then, import your notebook and the runtime as:
+## Getting Started
 
-~~~js
-import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "@simonw/convert-claude-json-to-markdown";
-~~~
+1. Clone the repository:
+```bash
+git clone [your-repo-url]
+```
 
-To log the value of the cell named “foo”:
+2. Install dependencies:
+```bash
+npm install
+```
 
-~~~js
-const runtime = new Runtime();
-const main = runtime.module(define);
-main.value("foo").then(value => console.log(value));
-~~~
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Development
+
+-
